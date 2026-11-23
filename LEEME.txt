@@ -1,0 +1,28 @@
+LAUNCHER SIMULADOR - PROYECTO ANDROID + GITHUB ACTIONS
+
+Este proyecto empaqueta el simulador HTML optimizado en una app Android usando WebView.
+
+GENERAR EL APK CON GITHUB (SIN ANDROID STUDIO)
+1. Inicia sesión o crea una cuenta gratuita en https://github.com
+2. Crea un repositorio nuevo. Puedes llamarlo LauncherSimulador.
+3. Sube el contenido de esta carpeta al repositorio (no subas el ZIP como único archivo;
+   debes subir las carpetas y archivos que contiene).
+4. En GitHub, abre la pestaña Actions y habilita los workflows si GitHub lo solicita.
+5. El workflow "Build Android APK" se ejecutará al subir los archivos a la rama main.
+   También puedes abrir Actions > Build Android APK > Run workflow.
+6. Cuando termine correctamente, abre la ejecución y descarga el artefacto
+   "LauncherSimulador-APK".
+7. Descomprime el artefacto en tu teléfono Android y abre app-debug.apk para instalarlo.
+   Si Android lo solicita, permite instalar aplicaciones desde esa fuente.
+
+ARCHIVO HTML
+El simulador está en app/src/main/assets/index.html.
+
+REQUISITOS DE LA APP
+- Android 6.0 (API 23) o posterior.
+- El simulador funciona localmente dentro de la app.
+- Algunas fuentes externas pueden necesitar conexión a internet.
+
+NOTA
+GitHub Actions compila un APK de depuración (debug), adecuado para probar e instalar
+manualmente. Para publicar en Google Play se necesita preparar una versión release firmada.
